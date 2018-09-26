@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Document</title><link rel="stylesheet" href="css/main.css"></head><body><div class="main-container"><div class="form-container"><form action="" class="form js-form"><input type="url" placeholder="Input your url" class="js-input" pattern="^(?:(?:https?|HTTPS?|ftp|FTP):\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-zA-Z\u00a1-\uffff0-9]-*)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]-*)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))\.?)(?::\d{2,})?(?:[/?#]\S*)?$"> <button type="submit" class="js-submit">Add</button></form></div><div class="bookmark-container"><script type="hbs/template" id="container">{{#each data}}
+    <div class='mark-block'>
+           <img src="{{img}}" alt="{{name}}" class='img'>
+           <p class='url-text'><a href='{{url}}' target="_blank">{{url}}</a></p>
+           <button>delete</button>
+        </div>
+        {{/each}}</script></div></div><script type="hbs/template" id="mark-container"><div class='mark-block'>
+   <img src="{{img}}" alt="{{name}}" class='img'>
+   <p class='url-text'><a href='{{url}}' target="_blank">{{url}}</a></p>
+   <button>delete</button>
+</div></script><script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script><script src="js/script-min.js"></script></body></html>
